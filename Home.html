@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+<head> <title> Best Energy </title> 
+<link rel="stylesheet" type="text/css" href="style.css"> 
+
+<style>
+body, html {
+  height: 100%;
+  margin:0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  
+  background-image: url('green.gif');
+  
+
+  /* Control the height of the image */
+ height: 500px; width:300px
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  left: 0;
+ height: 300px;
+ width:400px;
+  margin:250px 250px 50px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: #999999;
+  border-radius: 8px;
+}
+
+
+  input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius:5px;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+footer {position:relative; top:50px; text-align:center;}
+img {  width:200px; position: absolute; margin:30px 100px;}
+
+.logo {
+  list-style-type: none;
+  margin-top: 250px;
+  padding: 0;
+  width: 200px;
+  position: absolute;
+  margin: 0px 20px 0px 0px;
+}
+
+
+
+#demo { position:absoulate;
+		border-style:solid; border-width:2px; border-color: grey; border-radius:5px;
+	    margin:-150px 600px 0px; height:50px; width:200px; background-color: grey;}
+	p { Font-family: Times New Romans; font-size:20px; text-align:Center;}
+	
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<div class="bg-img">
+
+<img src="l1.jpg" >
+	
+
+  <form class="container" action = "http://localhost:5000/login" method = "post" >
+    <h2> Best OPV properties   </h2>
+<br><br>
+    <label for="donor"><b>Inupt Donor molecule formula </b></label> <br>
+    <input type="text" placeholder="like:COC(=O)c1cc2csc(-c3cccs3)c2s1" name="nm" id="donor" required>
+
+<br><br>
+    <input type="button" class="btn" onclick="test()" value="Submit"> 
+  </form>
+  
+      
+</div>
+
+
+
+<footer>
+
+<h6> Jubail university college (c) GP <h6>
+</footer>
+
+</body>
+</html>
+
